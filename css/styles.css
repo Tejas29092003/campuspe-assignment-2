@@ -1,0 +1,131 @@
+/* =========================
+AUTH SYSTEM GLOBAL THEME
+========================= */
+
+/* Google font base reset */
+body {
+font-family: 'Poppins', sans-serif;
+background: linear-gradient(135deg, #eef2ff, #e0f7fa);
+min-height: 100vh;
+margin: 0;
+}
+
+/* Smooth page transition */
+body {
+opacity: 0;
+animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+to { opacity: 1; }
+}
+
+/* Center auth container */
+.auth-wrapper {
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* Custom glass card */
+.auth-card {
+border-radius: 18px;
+border: none;
+backdrop-filter: blur(12px);
+background: rgba(255,255,255,0.85);
+box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+transition: 0.3s ease;
+}
+
+.auth-card:hover {
+transform: translateY(-3px);
+}
+
+/* Inputs */
+.form-control {
+border-radius: 10px;
+padding: 12px;
+transition: 0.3s;
+}
+
+.form-control:focus {
+border-color: #4f46e5;
+box-shadow: 0 0 0 0.15rem rgba(79,70,229,0.2);
+}
+
+/* Primary button */
+.btn-primary {
+background: #4f46e5;
+border: none;
+border-radius: 10px;
+padding: 10px;
+font-weight: 500;
+transition: 0.3s;
+}
+
+.btn-primary:hover {
+background: #4338ca;
+transform: scale(1.02);
+}
+
+/* Links */
+.auth-link {
+color: #4f46e5;
+text-decoration: none;
+font-size: 14px;
+}
+
+.auth-link:hover {
+text-decoration: underline;
+}
+
+/* Navbar custom */
+.navbar-custom {
+background: #4f46e5;
+}
+
+/* Dashboard welcome box */
+.dashboard-box {
+background: white;
+border-radius: 16px;
+padding: 30px;
+box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+/* Dark mode */
+.dark-mode {
+background: linear-gradient(135deg, #0f172a, #1e293b);
+color: white;
+}
+
+.dark-mode .auth-card {
+background: rgba(30,41,59,0.9);
+color: white;
+}
+
+.dark-mode .dashboard-box {
+background: #1e293b;
+}
+
+
+/* subtle hover interaction */
+.auth-card {
+transition: 0.25s ease;
+}
+
+.auth-card:hover {
+transform: translateY(-4px);
+}
+
+/* button smooth animation */
+.btn {
+transition: 0.2s ease;
+}
+
+/* better mobile spacing */
+@media (max-width: 500px) {
+.auth-card {
+width: 90% !important;
+}
+}
